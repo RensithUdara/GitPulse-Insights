@@ -57,7 +57,7 @@ export default function Home() {
   const [langInput, setLangInput] = useState('');
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [copiedType, setCopiedType] = useState<string | null>(null);
-  const [activeCodeTab, setActiveCodeTab] = useState<'markdown' | 'html'>('markdown');
+  const [activeCodeTab, setActiveCodeTab] = useState<'markdown' | 'html' | 'url'>('markdown');
   const [baseUrl, setBaseUrl] = useState('');
   const [isMounted, setIsMounted] = useState(false);
   const [refreshKey, setRefreshKey] = useState(Date.now());
@@ -195,6 +195,11 @@ export default function Home() {
   const getMarkdownCode = () => `<p align="center">\n  <img src="${baseUrl}${previewUrl}" alt="${generatedUsername}'s GitPulse card" />\n</p>`;
   const getHtmlCode = () => `<div align="center">\n  <img src="${baseUrl}${previewUrl}" alt="${generatedUsername}'s GitPulse card" />\n</div>`;
   const getDirectUrl = () => `${baseUrl}${previewUrl}`;
+  const getEmbedCode = () => {
+    if (activeCodeTab === 'html') return getHtmlCode();
+    if (activeCodeTab === 'url') return getDirectUrl();
+    return getMarkdownCode();
+  };
   const getStudioUrl = () => {
     const params = new URLSearchParams({
       username: username.trim(),
@@ -535,11 +540,12 @@ export default function Home() {
                     <div className="code-tabs">
                       <button type="button" className={activeCodeTab === 'markdown' ? 'active' : ''} onClick={() => setActiveCodeTab('markdown')}><SiMarkdown size={14} />Markdown</button>
                       <button type="button" className={activeCodeTab === 'html' ? 'active' : ''} onClick={() => setActiveCodeTab('html')}><SiHtml5 size={14} />HTML</button>
+                      <button type="button" className={activeCodeTab === 'url' ? 'active' : ''} onClick={() => setActiveCodeTab('url')}><ExternalLink size={14} />URL</button>
                     </div>
                   </div>
                   <div className="code-box">
-                    <pre>{activeCodeTab === 'markdown' ? getMarkdownCode() : getHtmlCode()}</pre>
-                    <button type="button" onClick={() => copyToClipboard(activeCodeTab === 'markdown' ? getMarkdownCode() : getHtmlCode(), activeCodeTab)}>
+                    <pre>{getEmbedCode()}</pre>
+                    <button type="button" onClick={() => copyToClipboard(getEmbedCode(), activeCodeTab)}>
                       {copiedType === activeCodeTab ? <Check size={14} /> : <Copy size={14} />}
                       {copiedType === activeCodeTab ? 'Copied' : 'Copy'}
                     </button>
