@@ -361,7 +361,6 @@ export default function Home() {
               <span>{copiedType === 'studio-url' ? 'Copied' : 'Share'}</span>
             </button>
             <a className="quiet-link icon-only" href="https://github.com/RensithUdara/GitPulse-Insights" target="_blank" rel="noreferrer" title="Open GitHub repository"><SiGithub size={18} /></a>
-            <button className="sign-in-btn" type="button">Sign In</button>
           </div>
         </header>
 
