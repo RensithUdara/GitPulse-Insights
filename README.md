@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="public/gitpulse-logo.png" alt="GitPulse logo" width="180" />
 </p>
 
@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  <a href="https://gitpulse-rose.vercel.app"><strong>🚀 Live Demo</strong></a>
-  ·
+  <a href="https://gitpulse-insights.vercel.app"><strong>ðŸš€ Live Demo</strong></a>
+  Â·
   <a href="#-features">Features</a>
-  ·
+  Â·
   <a href="#-quick-start">Quick Start</a>
-  ·
+  Â·
   <a href="#-embed-example">Embed</a>
 </p>
 
@@ -27,31 +27,31 @@
 
 ---
 
-## ✨ Overview
+## âœ¨ Overview
 
 **GitPulse** is a GitHub profile card studio that generates elegant, real-time SVG analytics cards from public GitHub data. It is built for developers who want a polished profile README, portfolio, landing page, or dashboard without manually designing stats graphics.
 
-Live app: **https://gitpulse-rose.vercel.app**
+Live app: **https://gitpulse-insights.vercel.app**
 
 ---
 
-## 🌟 Features
+## ðŸŒŸ Features
 
-- 🎨 **Clean card builder** with live preview
-- 🌓 **Light, dark, and system UI themes**
-- 🧩 **Module controls** for profile, summary, monthly chart, stats, languages, streaks, and activity graph
-- 🖼️ **SVG profile card API** ready for GitHub README embeds
-- 📋 **Embed panel** with Markdown, HTML, and direct URL tabs
-- 🎯 **Multiple card themes** including Ink Dark, Paper Light, Graphite, Copper, Moss, Harbor, Plum, and Stone
-- 🚫 **Language filters** to hide noisy languages such as HTML, CSS, notebooks, SCSS, or custom values
-- 📈 **GitHub analytics** for contributions, repositories, stars, forks, PRs, issues, streaks, languages, and rank
-- ⚡ **Server-side caching** with ETag support for faster repeated requests
-- 📦 **Export options** for SVG, PNG, and JPG
-- 🚀 **Vercel-ready deployment**
+- ðŸŽ¨ **Clean card builder** with live preview
+- ðŸŒ“ **Light, dark, and system UI themes**
+- ðŸ§© **Module controls** for profile, summary, monthly chart, stats, languages, streaks, and activity graph
+- ðŸ–¼ï¸ **SVG profile card API** ready for GitHub README embeds
+- ðŸ“‹ **Embed panel** with Markdown, HTML, and direct URL tabs
+- ðŸŽ¯ **Multiple card themes** including Ink Dark, Paper Light, Graphite, Copper, Moss, Harbor, Plum, and Stone
+- ðŸš« **Language filters** to hide noisy languages such as HTML, CSS, notebooks, SCSS, or custom values
+- ðŸ“ˆ **GitHub analytics** for contributions, repositories, stars, forks, PRs, issues, streaks, languages, and rank
+- âš¡ **Server-side caching** with ETag support for faster repeated requests
+- ðŸ“¦ **Export options** for SVG, PNG, and JPG
+- ðŸš€ **Vercel-ready deployment**
 
 ---
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 - **Framework:** Next.js App Router
 - **Language:** TypeScript
@@ -62,23 +62,23 @@ Live app: **https://gitpulse-rose.vercel.app**
 
 ---
 
-## 📸 Preview
+## ðŸ“¸ Preview
 
 Generate a card from the live API:
 
 ```md
-![GitPulse card](https://gitpulse-rose.vercel.app/api/insight?username=mojombo&theme=ink_dark)
+![GitPulse card](https://gitpulse-insights.vercel.app/api/insight?username=mojombo&theme=ink_dark)
 ```
 
 Example direct URL:
 
 ```txt
-https://gitpulse-rose.vercel.app/api/insight?username=mojombo&theme=ink_dark
+https://gitpulse-insights.vercel.app/api/insight?username=mojombo&theme=ink_dark
 ```
 
 ---
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### 1. Clone the project
 
@@ -121,7 +121,7 @@ http://localhost:3000
 
 ---
 
-## 🔑 GitHub Token
+## ðŸ”‘ GitHub Token
 
 GitPulse uses the GitHub GraphQL API, so a personal access token is required.
 
@@ -140,13 +140,13 @@ For most public profile cards, a fine-grained token with public user and reposit
 
 ---
 
-## 🧩 Embed Example
+## ðŸ§© Embed Example
 
 ### Markdown
 
 ```md
 <p align="center">
-  <img src="https://gitpulse-rose.vercel.app/api/insight?username=YOUR_USERNAME&theme=ink_dark" alt="YOUR_USERNAME's GitPulse card" />
+  <img src="https://gitpulse-insights.vercel.app/api/insight?username=YOUR_USERNAME&theme=ink_dark" alt="YOUR_USERNAME's GitPulse card" />
 </p>
 ```
 
@@ -154,13 +154,13 @@ For most public profile cards, a fine-grained token with public user and reposit
 
 ```html
 <div align="center">
-  <img src="https://gitpulse-rose.vercel.app/api/insight?username=YOUR_USERNAME&theme=ink_dark" alt="YOUR_USERNAME's GitPulse card" />
+  <img src="https://gitpulse-insights.vercel.app/api/insight?username=YOUR_USERNAME&theme=ink_dark" alt="YOUR_USERNAME's GitPulse card" />
 </div>
 ```
 
 ---
 
-## ⚙️ API Parameters
+## âš™ï¸ API Parameters
 
 Base endpoint:
 
@@ -184,18 +184,18 @@ Base endpoint:
 Example:
 
 ```txt
-https://gitpulse-rose.vercel.app/api/insight?username=torvalds&theme=harbor&languages=true&streak=true&graph=false
+https://gitpulse-insights.vercel.app/api/insight?username=torvalds&theme=harbor&languages=true&streak=true&graph=false
 ```
 
 Hide languages:
 
 ```txt
-https://gitpulse-rose.vercel.app/api/insight?username=YOUR_USERNAME&hide_langs=HTML,CSS,Jupyter%20Notebook
+https://gitpulse-insights.vercel.app/api/insight?username=YOUR_USERNAME&hide_langs=HTML,CSS,Jupyter%20Notebook
 ```
 
 ---
 
-## 🎨 Available Card Themes
+## ðŸŽ¨ Available Card Themes
 
 - `ink_dark`
 - `paper_light`
@@ -210,7 +210,7 @@ Legacy theme aliases are also supported, including `dark`, `github_dark`, `githu
 
 ---
 
-## 📦 Scripts
+## ðŸ“¦ Scripts
 
 ```bash
 npm run dev      # Start development server
@@ -220,7 +220,7 @@ npm run start    # Start production server
 
 ---
 
-## ☁️ Deploy To Vercel
+## â˜ï¸ Deploy To Vercel
 
 1. Add this project to Vercel.
 2. Add `GITHUB_TOKEN` in **Project Settings > Environment Variables**.
@@ -235,12 +235,12 @@ vercel deploy --prod
 Current production URL:
 
 ```txt
-https://gitpulse-rose.vercel.app
+https://gitpulse-insights.vercel.app
 ```
 
 ---
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```txt
 src/
@@ -262,7 +262,7 @@ public/
 
 ---
 
-## 💡 Use Cases
+## ðŸ’¡ Use Cases
 
 - GitHub profile README stats card
 - Developer portfolio profile badge
@@ -272,7 +272,7 @@ public/
 
 ---
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 Contributions are welcome. You can improve the UI, add new card themes, refine analytics, optimize SVG rendering, or add more export options.
 
@@ -286,12 +286,12 @@ git commit -m "Add your feature"
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
 This project is open source. Check the repository license file for details.
 
 ---
 
 <p align="center">
-  Built with ❤️ for developers who want their GitHub profile to feel alive.
+  Built with â¤ï¸ for developers who want their GitHub profile to feel alive.
 </p>
