@@ -1675,7 +1675,6 @@ input:checked + .slider:before {
 
 .theme-segment,
 .quiet-link,
-.sign-in-btn,
 .preview-actions button,
 .code-tabs button,
 .code-box button,
@@ -1683,21 +1682,6 @@ input:checked + .slider:before {
   border-color: rgba(255, 255, 255, 0.14);
   background-color: #111417;
   color: #f4f4f2;
-}
-
-.sign-in-btn {
-  height: 38px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ff9737;
-  border-radius: 9px;
-  padding: 0 16px;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 800;
-  cursor: pointer;
 }
 
 .icon-only {
@@ -2016,7 +2000,6 @@ input:checked + .slider:before {
 
 [data-theme='light'] .theme-segment,
 [data-theme='light'] .quiet-link,
-[data-theme='light'] .sign-in-btn,
 [data-theme='light'] .preview-actions button,
 [data-theme='light'] .code-tabs button,
 [data-theme='light'] .code-box button,
@@ -2029,10 +2012,6 @@ input:checked + .slider:before {
 [data-theme='light'] .theme-segment-btn.active {
   background-color: #ebe4d7;
   color: #241f1a;
-}
-
-[data-theme='light'] .sign-in-btn {
-  border-color: #b85f28;
 }
 
 [data-theme='light'] .feature-strip span {
