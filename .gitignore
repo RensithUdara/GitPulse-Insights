@@ -23,7 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Local env files
-.env
 .env*.local
 
 # Vercel
@@ -34,3 +33,4 @@ yarn-error.log*
 next-env.d.ts
 .vercel
 .env*.local
+config.bat
